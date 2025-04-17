@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resumen del Poder Ejecutivo</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="css/resumen.css">
+</head>
+<body onclick="closeSidebar(event)">
+  <i class="bi bi-list menu-toggle" onclick="toggleSidebar()"></i>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid d-flex flex-column align-items-center">
+      <span class="navbar-text text-white h4"><strong>RESUMEN - PODER EJECUTIVO</strong></span>
+      <span class="navbar-text text-white">Joshua Yeray Bailón García - Grupo: 605</span>
+    </div>
+  </nav>
+
+  <div class="sidebar" id="sidebar">
+    <a href="index.html" class="nav-link"><i class="bi bi-house-door-fill"></i> Inicio</a>
+    <a href="federal.html" class="nav-link"><i class="bi bi-person-badge-fill"></i> Federal</a>
+    <a href="estatal.html" class="nav-link"><i class="bi bi-building"></i> Estatal</a>
+    <a href="municipal.html" class="nav-link"><i class="bi bi-geo-alt-fill"></i> Municipal</a>
+    <a href="resumen.html" class="nav-link"><i class="bi bi-journal-text"></i> Resumen</a>
+  </div>
+
+  <div class="btn-inicio" onclick="window.location.href='index.html'">
+    <i class="bi bi-house-door-fill"></i>
+  </div>
+
+  <div class="btn-inicio" style="bottom: 80px;" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+    <i class="bi bi-arrow-up-circle-fill"></i>
+  </div>
+
+  <main class="container my-5">
+    <div class="alert alert-info text-center">
+      <strong>Resumen General del Poder Ejecutivo Mexicano</strong> - Una vista integral de sus niveles, funciones y artículos clave
+    </div>
+
+    <div class="card mb-4">
+      <img src="https://lh4.googleusercontent.com/proxy/lEXDR6zsO_FbIW8y1sdsAyK7ie4J1dc_r7ZtduLLIWW8hn87DxmLJjQMODhHa80mK_gPoEIoHLt-4Fc5FIK_wlzaWKkalANBh76dctE5U2xfBn0YrWZR_V_nzQf9R8bFMoeRD21GTq0" class="img-fluid" alt="Poder Ejecutivo Mexicano">
+      <div class="card-body">
+        <h5 class="card-title text-center">Concepto General del Poder Ejecutivo</h5>
+        <p>El Poder Ejecutivo es uno de los tres poderes fundamentales del Estado Mexicano. Su función principal es hacer cumplir las leyes, ejecutar las políticas públicas, administrar el presupuesto y representar al país. Este poder se ejerce a nivel federal por el Presidente, a nivel estatal por los Gobernadores y a nivel municipal por los Presidentes Municipales.</p>
+        <p>Cada uno de estos niveles tiene sus propios requisitos, atribuciones y periodos de mandato. A continuación, se resumen los aspectos más relevantes de cada uno.</p>
+      </div>
+    </div>
+
+    <section id="federal">
+      <h4 class="text-center text-danger"><strong>Nivel Federal</strong></h4>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Presidente de la República</h5>
+          <p>Duración: 6 años sin reelección. Elegido el 1° de octubre. Requisitos: ser ciudadano mexicano por nacimiento, hijo de padres mexicanos, al menos 35 años, no clérigo ni militar activo, sin cargos públicos recientes.</p>
+          <div class="d-flex flex-wrap justify-content-center gap-2">
+            <button class="btn btn-outline-danger" onclick="Swal.fire('Artículo 80', 'El poder ejecutivo se deposita en una sola persona: el Presidente.', 'info')">Art. 80</button>
+            <button class="btn btn-outline-danger" onclick="Swal.fire('Artículo 82', 'Establece los requisitos para ser Presidente.', 'info')">Art. 82</button>
+            <button class="btn btn-outline-danger" onclick="Swal.fire('Artículo 83', 'Duración del cargo presidencial: 6 años, sin reelección.', 'info')">Art. 83</button>
+            <button class="btn btn-outline-danger" onclick="Swal.fire('Artículo 84', 'Regula la sucesión en caso de falta absoluta del Presidente.', 'info')">Art. 84</button>
+            <button class="btn btn-outline-danger" onclick="Swal.fire('Artículo 89', 'Facultades exclusivas del Presidente.', 'info')">Art. 89</button>
+          </div>
+          <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+            <button class="btn btn-outline-dark" onclick="Swal.fire('Función Principal', 'Dirige la administración pública federal.', 'info')">Función</button>
+            <button class="btn btn-outline-dark" onclick="Swal.fire('Organización', 'Presidencia, Secretarías de Estado, órganos desconcentrados.', 'info')">Organización</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="estatal">
+      <h4 class="text-center text-success"><strong>Nivel Estatal</strong></h4>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Gobernador</h5>
+          <p>Duración: 6 años sin reelección. Elegido el 16 de septiembre. Requisitos: mexicano por nacimiento, originario del estado o residente, al menos 30 años, sin cargos ni funciones militares previas recientes.</p>
+          <div class="d-flex flex-wrap justify-content-center gap-2">
+            <button class="btn btn-outline-success" onclick="Swal.fire('Artículo 116', 'Organización del poder estatal.', 'info')">Art. 116</button>
+            <button class="btn btn-outline-success" onclick="Swal.fire('Artículo 77', 'Nombra gabinete, propone presupuesto.', 'info')">Art. 77</button>
+            <button class="btn btn-outline-success" onclick="Swal.fire('Artículo 115', 'Relación con los municipios.', 'info')">Art. 115</button>
+            <button class="btn btn-outline-success" onclick="Swal.fire('Artículo 108', 'Responsabilidad administrativa.', 'info')">Art. 108</button>
+            <button class="btn btn-outline-success" onclick="Swal.fire('Artículo 122', 'Gobierno de la CDMX.', 'info')">Art. 122</button>
+          </div>
+          <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+            <button class="btn btn-outline-dark" onclick="Swal.fire('Función Principal', 'Administra el estado y hace cumplir la ley.', 'info')">Función</button>
+            <button class="btn btn-outline-dark" onclick="Swal.fire('Organización', 'Gobernador, gabinete estatal, dependencias estatales.', 'info')">Organización</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="municipal">
+      <h4 class="text-center text-primary"><strong>Nivel Municipal</strong></h4>
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Presidente Municipal</h5>
+          <p>Duración: 3 años. Posibilidad de reelección. Elegido el 1° de enero. Requisitos: mexicano por nacimiento, con residencia en el municipio, al menos 21 años, sin cargos recientes o actividades religiosas/militares.</p>
+          <div class="d-flex flex-wrap justify-content-center gap-2">
+            <button class="btn btn-outline-primary" onclick="Swal.fire('Artículo 115', 'Estructura del ayuntamiento.', 'info')">Art. 115</button>
+            <button class="btn btn-outline-primary" onclick="Swal.fire('Artículo 134', 'Transparencia y uso eficiente de recursos.', 'info')">Art. 134</button>
+            <button class="btn btn-outline-primary" onclick="Swal.fire('Artículo 29', 'Limitación de garantías en emergencias.', 'info')">Art. 29</button>
+            <button class="btn btn-outline-primary" onclick="Swal.fire('Artículo 41', 'Participación ciudadana en elecciones.', 'info')">Art. 41</button>
+            <button class="btn btn-outline-primary" onclick="Swal.fire('Artículo 108', 'Responsabilidad de servidores públicos.', 'info')">Art. 108</button>
+          </div>
+          <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+            <button class="btn btn-outline-dark" onclick="Swal.fire('Función Principal', 'Administrar el municipio y coordinar servicios públicos.', 'info')">Función</button>
+            <button class="btn btn-outline-dark" onclick="Swal.fire('Organización', 'Presidente Municipal, Síndicos y Regidores.', 'info')">Organización</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/resumen.js"></script>
+</body>
+</html>

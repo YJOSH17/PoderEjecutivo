@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poder Ejecutivo Federal</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/federal.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body onclick="closeSidebar(event)">
+  <i class="bi bi-list menu-toggle" onclick="toggleSidebar()"></i>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid d-flex flex-column align-items-center">
+      <span class="navbar-text text-white h4"><strong>PODER EJECUTIVO - FEDERAL</strong></span>
+      <span class="navbar-text text-white">Joshua Yeray Bailón García - Grupo: 605</span>
+    </div>
+  </nav>
+
+  <div class="sidebar" id="sidebar">
+    <a href="index.html" class="nav-link"><i class="bi bi-house-door-fill"></i> Inicio</a>
+    <a href="federal.html" class="nav-link"><i class="bi bi-person-badge-fill"></i> Federal</a>
+    <a href="estatal.html" class="nav-link"><i class="bi bi-building"></i> Estatal</a>
+    <a href="municipal.html" class="nav-link"><i class="bi bi-geo-alt-fill"></i> Municipal</a>
+    <a href="resumen.html" class="nav-link"><i class="bi bi-journal-text"></i> Resumen</a>
+
+  </div>
+
+  <div class="btn-inicio" onclick="window.location.href='index.html'">
+    <i class="bi bi-house-door-fill"></i>
+  </div>
+
+  <div class="btn-inicio" style="bottom: 80px;" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+    <i class="bi bi-arrow-up-circle-fill"></i>
+  </div>
+
+  <main class="container my-5">
+    <div class="alert alert-info text-center">
+      <strong>Poder Ejecutivo Federal</strong> - Estructura, atribuciones, requisitos y marco constitucional a nivel nacional
+    </div>
+
+    <div class="card mb-4">
+      <img src="https://integramagazine.com/wp-content/uploads/2023/07/La-sucesion-por-la-presidencia-de-Mexico-9.jpeg" alt="Presidencia de México" class="img-fluid">
+      <div class="card-body">
+        <h5 class="card-title text-center">Presidencia de la República</h5>
+        <p class="card-text">
+          El Poder Ejecutivo Federal está encabezado por el Presidente de los Estados Unidos Mexicanos, quien ejerce la autoridad máxima en el gobierno nacional. Este poder se deposita en una sola persona y tiene como función hacer cumplir las leyes, representar al país, administrar los recursos federales, y dirigir tanto la política interior como exterior.
+        </p>
+        <p>
+          El Presidente de la República es electo por el voto directo de la ciudadanía para un periodo de <strong>6 años sin posibilidad de reelección</strong>. Este periodo inicia el <strong>1° de octubre</strong> del año de la elección. El presidente no puede haber ocupado el cargo en ningún momento anterior, ni siquiera como sustituto o interino.
+        </p>
+        <h6>Requisitos para ser Presidente:</h6>
+        <ul>
+          <li>Ser ciudadano mexicano por nacimiento, hijo de padres mexicanos y sin otra nacionalidad.</li>
+          <li>Tener al menos 35 años cumplidos al momento de la elección.</li>
+          <li>Haber residido en el país durante el año anterior a la elección.</li>
+          <li>No pertenecer al clero ni ser ministro de ningún culto religioso.</li>
+          <li>No ser militar en servicio activo ni haber ejercido ciertos cargos públicos en los seis meses previos a la elección.</li>
+        </ul>
+
+        <div class="alert alert-secondary text-center">
+          <strong>Artículos constitucionales relevantes:</strong>
+          <div class="d-flex flex-row justify-content-center flex-wrap gap-3 mt-3">
+            <button class="btn btn-outline-primary" onclick="Swal.fire('Artículo 80', 'El ejercicio del Supremo Poder Ejecutivo se deposita en un solo individuo, que se denominará “Presidente de los Estados Unidos Mexicanos”.', 'info')">Art. 80</button>
+            <button class="btn btn-outline-success" onclick="Swal.fire('Artículo 82', 'Establece los requisitos para ser Presidente, como nacionalidad, edad y residencia.', 'info')">Art. 82</button>
+            <button class="btn btn-outline-warning" onclick="Swal.fire('Artículo 83', 'La duración del cargo presidencial es de seis años, sin posibilidad de reelección.', 'info')">Art. 83</button>
+            <button class="btn btn-outline-info" onclick="Swal.fire('Artículo 84', 'Regula la sucesión presidencial en caso de falta absoluta del Presidente.', 'info')">Art. 84</button>
+            <button class="btn btn-outline-danger" onclick="Swal.fire('Artículo 89', 'Establece las facultades y atribuciones del Presidente, incluyendo relaciones exteriores, seguridad nacional y nombramientos.', 'info')">Art. 89</button>
+          </div>
+        </div>
+
+        <p>
+          En caso de ausencia definitiva del Presidente, el Congreso designará un Presidente interino o sustituto, dependiendo del momento del sexenio. Si la falta ocurre dentro de los primeros dos años, se convocan elecciones; si es después, se nombra a un sustituto para terminar el periodo.
+        </p>
+        <p>
+          Entre las facultades exclusivas del Presidente destacan: nombrar secretarios de Estado, promulgar leyes, ejercer el mando supremo de las Fuerzas Armadas, indultar a reos federales, y declarar guerra con autorización del Congreso.
+        </p>
+
+        <div class="text-center">
+          <button onclick="Swal.fire('Facultades Presidenciales', 'Nombramientos, relaciones exteriores, fuerzas armadas, seguridad nacional, política económica y promulgar leyes.', 'info')" class="btn btn-outline-dark">Facultades</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <center>
+      <div class="col-md-6 text-center">
+        
+        <img src="https://cloudfront-us-east-1.images.arcpublishing.com/infobae/CC7Y7S2SXZCWJDGSWV2U7QZHOI.jpeg" alt="Informe presidencial" class="img-fluid mb-4">
+      
+        <img src="https://scontent.fmex10-2.fna.fbcdn.net/v/t39.30808-6/465014513_8500858566700169_2639283890010143845_n.png?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_ohc=beoRXpThVJAQ7kNvwH5AvVi&_nc_oc=AdnNnd4cbKPYNwShm30sfGepBohwB3JL89YqksMkUWRF1Ai_KACFVGGBRTn_L2kNQhg7Dkqbqiz1OJb7jHi6hrMw&_nc_zt=23&_nc_ht=scontent.fmex10-2.fna&_nc_gid=G1C6qkJ-oS5mecoetGN44w&oh=00_AfGrSQGvvuBOmVqNqTAXfcVD4M6kfBJ5uIW2-V9i7YbunQ&oe=68062E1F" alt="Presidente en funciones" class="img-fluid mb-4">
+      </div>
+    
+    </div>
+  </center>
+  </main>
+
+  <script src="js/federal.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poder Ejecutivo Estatal</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/estatal.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body onclick="closeSidebar(event)">
+  <i class="bi bi-list menu-toggle" onclick="toggleSidebar()"></i>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid d-flex flex-column align-items-center">
+      <span class="navbar-text text-white h4"><strong>PODER EJECUTIVO - ESTATAL</strong></span>
+      <span class="navbar-text text-white">Joshua Yeray Bailón García - Grupo: 605</span>
+    </div>
+  </nav>
+
+  <div class="sidebar" id="sidebar">
+    <a href="index.html" class="nav-link"><i class="bi bi-house-door-fill"></i> Inicio</a>
+    <a href="federal.html" class="nav-link"><i class="bi bi-person-badge-fill"></i> Federal</a>
+    <a href="estatal.html" class="nav-link"><i class="bi bi-building"></i> Estatal</a>
+    <a href="municipal.html" class="nav-link"><i class="bi bi-geo-alt-fill"></i> Municipal</a>
+    <a href="resumen.html" class="nav-link"><i class="bi bi-journal-text"></i> Resumen</a>
+
+  </div>
+
+  <div class="btn-inicio" onclick="window.location.href='index.html'">
+    <i class="bi bi-house-door-fill"></i>
+  </div>
+
+  <div class="btn-inicio" style="bottom: 80px;" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+    <i class="bi bi-arrow-up-circle-fill"></i>
+  </div>
+
+  <main class="container my-5">
+    <div class="alert alert-info text-center">
+      <strong>Poder Ejecutivo Estatal</strong> - Estructura, funciones, requisitos y marco legal en las entidades federativas
+    </div>
+
+    <div class="card mb-4">
+      <img src="https://www.congresoedomex.gob.mx/storage/img/fotos/comunicados/lxi/1f6d0f60b-f3fb-47ca-8582-a47c56131397.jpg" alt="Gobierno Estatal" class="img-fluid">
+      <div class="card-body">
+        <h5 class="card-title text-center">Gobernador: Titular del Poder Ejecutivo Estatal</h5>
+        <p class="card-text">
+          El Poder Ejecutivo Estatal es ejercido por el Gobernador en cada entidad federativa de México. Es responsable de hacer cumplir la Constitución Estatal, las leyes locales, promover el bienestar social, coordinar con el gobierno federal y supervisar los municipios.
+        </p>
+        <p>
+          El Gobernador es electo por votación directa y popular para un periodo de <strong>6 años</strong>, sin reelección. Su mandato inicia, en la mayoría de los estados, el <strong>16 de septiembre</strong> posterior a la elección.
+        </p>
+        <h6>Requisitos constitucionales para ser Gobernador:</h6>
+        <ul>
+          <li>Ser ciudadano mexicano por nacimiento, con origen o residencia mínima en el estado (normalmente 5 años).</li>
+          <li>Haber cumplido al menos 30 años al día de la elección.</li>
+          <li>No haber ocupado cargos de elección federal o estatal en el año previo.</li>
+          <li>No ser ministro de culto ni militar en servicio activo seis meses antes.</li>
+          <li>No haber sido Gobernador, excepto en caso de interinato o sustitución sin ocupar el cargo por seis años previos.</li>
+        </ul>
+
+        <div class="alert alert-secondary text-center">
+          <strong>Artículos constitucionales relevantes:</strong>
+          <div class="d-flex flex-row justify-content-center flex-wrap gap-3 mt-3">
+            <button class="btn btn-outline-primary" onclick="Swal.fire('Artículo 116', 'Establece la organización de los poderes estatales con base en los principios republicano, representativo y popular.', 'info')">Art. 116</button>
+            <button class="btn btn-outline-success" onclick="Swal.fire('Artículo 122', 'Regula la organización del gobierno de la Ciudad de México como entidad federativa con régimen especial.', 'info')">Art. 122</button>
+            <button class="btn btn-outline-warning" onclick="Swal.fire('Artículo 108', 'Define responsabilidades de los funcionarios públicos estatales y municipales.', 'info')">Art. 108</button>
+            <button class="btn btn-outline-info" onclick="Swal.fire('Artículo 115', 'Establece las facultades del municipio libre dentro de las entidades federativas.', 'info')">Art. 115</button>
+            <button class="btn btn-outline-danger" onclick="Swal.fire('Artículo 77 (Ejemplo Estatal)', 'Permite al Gobernador nombrar y remover funcionarios y presentar el presupuesto de egresos.', 'info')">Art. 77</button>
+          </div>
+        </div>
+
+        <p>
+          En caso de <strong>ausencia temporal</strong> del Gobernador, el Secretario General de Gobierno asume funciones provisionales. Si la ausencia es <strong>definitiva</strong>, el Congreso local puede nombrar a un Gobernador sustituto o convocar elecciones, dependiendo del momento en que ocurra.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <img src="https://www.sopitas.com/wp-content/uploads/2023/09/gobernadora-estado-mexico-delfina-gomez-morena.png?resize=1024,519" alt="Toma de protesta del gobernador" class="img-fluid mb-4">
+      </div>
+      <div class="col-md-6">
+        <img src="img/img1.JPG" alt="Gobernador en funciones" class="img-fluid mb-4">
+      </div>
+    </div>
+
+    <div class="alert alert-secondary">
+      <strong>Funciones principales del Gobernador:</strong>
+      <ul>
+        <li>Proponer y promulgar leyes estatales ante el Congreso local.</li>
+        <li>Ejecutar y supervisar el presupuesto estatal aprobado.</li>
+        <li>Conceder indultos por delitos del fuero común.</li>
+        <li>Dirigir las fuerzas de seguridad pública del estado.</li>
+        <li>Representar al estado en actos oficiales y jurídicos.</li>
+        <li>Coordinarse con el Presidente de la República en políticas nacionales.</li>
+        <li>Presidir los consejos de salud, educación y seguridad del estado.</li>
+      </ul>
+    </div>
+  </main>
+
+  <script src="js/estatal.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poder Ejecutivo Municipal</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/municipal.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body onclick="closeSidebar(event)">
+  <i class="bi bi-list menu-toggle" onclick="toggleSidebar()"></i>
+
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid d-flex flex-column align-items-center">
+      <span class="navbar-text text-white h4"><strong>PODER EJECUTIVO - MUNICIPAL</strong></span>
+      <span class="navbar-text text-white">Joshua Yeray Bailón García - Grupo: 605</span>
+    </div>
+  </nav>
+
+  <div class="sidebar" id="sidebar">
+    <a href="index.html" class="nav-link"><i class="bi bi-house-door-fill"></i> Inicio</a>
+    <a href="federal.html" class="nav-link"><i class="bi bi-person-badge-fill"></i> Federal</a>
+    <a href="estatal.html" class="nav-link"><i class="bi bi-building"></i> Estatal</a>
+    <a href="municipal.html" class="nav-link"><i class="bi bi-geo-alt-fill"></i> Municipal</a>
+    <a href="resumen.html" class="nav-link"><i class="bi bi-journal-text"></i> Resumen</a>
+
+  </div>
+
+  <div class="btn-inicio" onclick="window.location.href='index.html'">
+    <i class="bi bi-house-door-fill"></i>
+  </div>
+
+  <div class="btn-inicio" style="bottom: 80px;" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+    <i class="bi bi-arrow-up-circle-fill"></i>
+  </div>
+
+  <main class="container my-5">
+    <div class="alert alert-info text-center">
+      <strong>Poder Ejecutivo Municipal</strong> - Gobierno cercano a la ciudadanía y gestor de servicios públicos básicos
+    </div>
+
+    <div class="card mb-4">
+      <img src="https://lajornadaestadodemexico.com/resizer/R9GsQ9U4b4Qispj_R69W4Fvge6Q=/1200x0/filters:format(webp)/https://wp.lajornada.prod.andes.news/wp-content/uploads/2021/11/palacio-municipal-de-Ecatepec-.jpeg" alt="Presidente Municipal" class="img-fluid">
+      <div class="card-body">
+        <h5 class="card-title text-center">Presidencia Municipal</h5>
+        <p class="card-text">
+          El Poder Ejecutivo Municipal está encabezado por el Presidente Municipal, quien representa al municipio, administra los recursos locales y gestiona los servicios públicos como el agua potable, alumbrado, limpieza, seguridad y desarrollo urbano.
+        </p>
+        <p>
+          El Presidente Municipal es electo por voto directo cada <strong>3 años</strong> y puede ser reelecto por un periodo adicional consecutivo. Junto con el Síndico y los Regidores, conforma el Ayuntamiento, órgano colegiado del gobierno local.
+        </p>
+        <h6>Requisitos para ser Presidente Municipal:</h6>
+        <ul>
+          <li>Ser ciudadano mexicano por nacimiento y con residencia en el municipio.</li>
+          <li>Tener al menos 21 años cumplidos el día de la elección.</li>
+          <li>No ser ministro de culto religioso ni militar en activo.</li>
+          <li>No haber sido Presidente Municipal, Síndico o Regidor en el periodo inmediato anterior.</li>
+          <li>No haber ocupado cargos como Diputado Federal, Fiscal o Gobernador en el último año.</li>
+        </ul>
+
+        <h6>Funciones destacadas:</h6>
+        <ul>
+          <li>Presidir las sesiones del Ayuntamiento.</li>
+          <li>Ejecutar las decisiones del Cabildo.</li>
+          <li>Velar por el cumplimiento de las leyes en el municipio.</li>
+          <li>Representar jurídica y administrativamente al municipio.</li>
+          <li>Supervisar el ejercicio presupuestal y la rendición de cuentas.</li>
+        </ul>
+
+        <div class="alert alert-secondary text-center">
+          <strong>Artículos constitucionales relevantes:</strong>
+          <div class="d-flex flex-row justify-content-center flex-wrap gap-3 mt-3">
+            <button class="btn btn-outline-primary" onclick="Swal.fire('Artículo 115', 'Organiza la administración municipal, establece las facultades del Ayuntamiento y su autonomía.', 'info')">Art. 115</button>
+            <button class="btn btn-outline-success" onclick="Swal.fire('Artículo 134', 'Regula el uso eficiente, honesto y transparente de los recursos públicos.', 'info')">Art. 134</button>
+            <button class="btn btn-outline-danger" onclick="Swal.fire('Artículo 29', 'Permite limitar garantías individuales en caso de emergencia.', 'info')">Art. 29</button>
+            <button class="btn btn-outline-warning" onclick="Swal.fire('Artículo 108', 'Establece responsabilidades administrativas de los servidores públicos, incluyendo presidentes municipales.', 'info')">Art. 108</button>
+            <button class="btn btn-outline-dark" onclick="Swal.fire('Artículo 41', 'Regula la organización de las elecciones y la participación ciudadana a nivel municipal.', 'info')">Art. 41</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <img src="https://adnoticias.mx/wp-content/uploads/2023/12/juan-maccise-alcalde-toluca.jpg" alt="Cabildo Municipal" class="img-fluid mb-4">
+          </div>
+          <div class="col-md-6">
+            <img src="img/img2.JPG" alt="Servicios Públicos" class="img-fluid mb-4">
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/municipal.js"></script>
+</body>
+</html>
