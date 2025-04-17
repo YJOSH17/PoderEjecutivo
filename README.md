@@ -62,15 +62,6 @@ Cada sección incluye:
 
 ---
 
-## 📸 Capturas
-
-### Página principal:
-![Inicio](https://via.placeholder.com/800x400?text=Captura+del+Inicio)
-
-### Vista de nivel federal:
-![Federal](https://via.placeholder.com/800x400?text=Captura+Nivel+Federal)
-
----
 
 ## ⚙️ Instrucciones de uso
 
@@ -85,8 +76,9 @@ Cada sección incluye:
 
 ## 🧠 Autor
 
-- **Joshua Yeray Bailón García**
-- Preparatoria | Grupo: 605
+- **YERCODE**
+- JUNIOR | YOUTUBER 
+[https://youtube.com/@yeray1507?si=BNltk1mqu32v-4w]
 
 ---
 
