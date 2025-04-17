@@ -1,7 +1,7 @@
 
 # Poder Ejecutivo Mexicano
 
-**Proyecto educativo interactivo desarrollado por Joshua Yeray Bailón García – Grupo: 605**
+**Proyecto educativo interactivo desarrollado por YERCODE**
 
 Este sitio web está diseñado para explicar de manera clara y dinámica la estructura, funciones y artículos constitucionales del **Poder Ejecutivo en México** a nivel federal, estatal y municipal. El proyecto forma parte de la materia *Introducción al Derecho* y está orientado a estudiantes de nivel medio superior.
 
