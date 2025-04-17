@@ -4,6 +4,7 @@
   --color-secundario: #006847;
   --color-menu: #FFD700; /* dorado */
   --color-acento: #ffffff;
+  --color-boton: rgb(10, 11, 73); /* azul institucional */
 }
 
 body {
@@ -62,7 +63,7 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: var(--color-primario);
+  background-color: var(--color-boton);
   color: white;
   border-radius: 50%;
   width: 50px;

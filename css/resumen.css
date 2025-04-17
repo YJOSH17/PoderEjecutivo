@@ -3,7 +3,7 @@
     --color-secundario: #FFD700; /* dorado */
     --color-fondo: #f9f9f9;
   --color-terciario: #006847;
- 
+  --color-boton: rgb(10, 11, 73); /* azul institucional */
     
   }
   
@@ -74,7 +74,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: var(--color-primario);
+    background-color: var(--color-boton);
     color: white;
     border-radius: 50%;
     width: 50px;
